@@ -1,0 +1,288 @@
+html {
+	padding:			0;
+	margin:				0;
+	font-family:		'Cantata One', nrif;
+	font-size:			0.9em;
+	background: 		#C9B37F;
+	color:				#47282C;
+}
+
+body {
+	width:				800px;
+	margin:				0 auto;
+	padding:			0;
+	background:			#DBDAB7;
+	border-style:		solid;
+	border-color:		#47282C;
+	border-width:		10px 1px 0 1px;
+}
+
+a {
+	color:				#47282C;
+	text-decoration:	none;
+	border-bottom:		1px #C9B37F solid;
+}
+
+p {
+	padding:			0;
+	margin:				2px 0;
+	clear:				both;
+}
+
+.date {
+	font-style:			italic;
+	text-align:			right;
+	clear:				none;
+}
+
+.title {
+	font-style:			italic;
+}
+
+header {
+	text-align:			center;
+}
+
+header h1 {
+	font-size:			300%;
+	font-variant:		small-caps;
+	margin:				0;
+	padding:			20px;
+}
+
+header p {
+	padding:			0;
+	margin:				0;
+	font-size:			75%;
+}
+
+address {
+	background:			#47282C;
+	color:				#DBDAB7;
+	height:				30px;
+	padding:			5px 10px;
+	line-height:		110%;
+}
+
+footer {
+	background:			#47282C;
+	color:				#DBDAB7;
+	padding:			5px 10px;
+	font-size:			75%;
+	text-align:			right;
+}
+
+footer a, address a {
+	color:				#DBDAB7;
+	border-bottom:		1px #8B8A77 solid;
+}
+
+#physical_contact {
+	display:			block;
+	float:				left;
+	width:				33%;
+	text-align:			left;
+}
+
+#electronic_contact {
+	display:			block;
+	float:				left;
+	width:				33%;
+}
+
+#audio_contact {
+	display:			block;
+	text-align:			right;
+	width:				33%;
+	float:				right;
+}
+
+main {
+	padding:	20px 50px
+}
+
+h2 {
+	font-weight:		bold;
+	font-size:			120%;
+	margin:				10px 5px 10px 5px;
+}
+
+h3 {
+	font-weight:		bold;
+	font-size:			100%;
+	margin:				0;
+	float:				left;
+}
+
+ul {
+	margin:				5px 0px 40px 50px;
+	padding:			0;
+	list-style-type:	none;
+}
+
+li {
+	margin:				0 0 20px 0;
+}
+
+#employment {
+	display:			block;
+	clear:				both;
+}
+
+#references li {
+	display:			inline;
+	width:				33%;
+	float:				left;
+	text-align:			center;
+}
+
+#references ul {
+	width:				90%;
+	margin:				5px auto 20px auto;
+}
+
+#references li:nth-child(3n) {
+	float:				none;
+	display:			inline;
+}
+
+#references h3 {
+	float:				none;
+}
+
+#references p {
+	clear:				none;
+	font-size:			80%;
+}
+
+@media print {
+	body {
+		width:				auto;
+		margin:				0 auto;
+		padding:			0;
+		background:			none;
+		border-width:		0;
+	}
+
+	header h1 {
+		font-size:		200%;
+		font-variant:	small-caps;
+		margin:			0;
+		padding:		10px;
+	}
+
+	main {
+		padding:		0 50px
+	}
+
+	ul {
+		margin-bottom: 0;
+	}
+
+	address {
+		background:		none;
+		color:			#DBDAB7;
+		height:			30px;
+		padding:		5px 10px;
+	}
+
+	#references, #education, footer {
+		display:		none;
+	}
+}
+
+@page {
+	size:				letter;
+	margin-top:			4mm;
+	margin-bottom:		4mm;
+}
+
+@media only screen and (max-width: 850px) {
+	body {
+		width:				100%;
+		border-width:		10px 0 0 0;
+		font-size:			80%;
+	}
+
+	address {
+		height:				24px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	address {
+		padding:			5px 5px;
+	}
+
+	main {
+		padding:			20px 5px;
+	}
+
+	ul {
+		margin:				5px 0px 40px 25px;
+		padding:			0;
+		list-style-type:	none;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	header h1 { 
+		font-size:			200%;
+	}
+
+	address {
+		font-size:			80%;
+		height:				20px;
+	}
+
+	main {
+		font-size:			80%;
+	}
+
+	ul {
+		margin:				5px 0px 40px 20px;
+		padding:			0;
+		list-style-type:	none;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	header h1 { 
+		font-size:			180%;
+	}
+
+	#physical_contact, #electronic_contact {
+		display:			none;
+	}
+
+	#audio_contact {
+		float:				none;
+		width:				100%;
+		text-align:			center;
+	}
+
+	address {
+		font-size:			80%;
+		height:				20px;
+	}
+
+	main {
+		font-size:			80%;
+	}
+
+	h3 {
+		float:				none;
+	}
+
+	main p {
+		display:			inline;
+	}
+
+	#references p, .company, .date, .title {
+		display:			block;
+	}
+
+	.date {
+		text-align:			left;
+	}
+}
