@@ -185,10 +185,6 @@ li {
 		height:			30px;
 		padding:		5px 10px;
 	}
-
-	#references, #education, footer {
-		display:		none;
-	}
 }
 
 @page {
