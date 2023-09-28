@@ -77,20 +77,20 @@ footer a, address a {
 	border-bottom:		1px #8B8A77 solid;
 }
 
-#physical_contact {
+#electronic_contact {
 	display:			block;
 	float:				left;
 	width:				33%;
 	text-align:			left;
 }
 
-#electronic_contact {
+#links {
 	display:			block;
 	float:				left;
 	width:				33%;
 }
 
-#audio_contact {
+#physical_contact {
 	display:			block;
 	text-align:			right;
 	width:				33%;
